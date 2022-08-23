@@ -33,10 +33,28 @@ document.getElementById('per-player-btn').addEventListener('click', function () 
 
     const totalPlayer = document.getElementById('expenses');
     const totalPlayerCost = totalPlayer.innerText;
-    console.log(totalPlayerCost);
     totalPlayer.innerText = totalAmount
+    const totalAmountk = parseInt(totalAmount);
 });
 
-document.getElementById('per-player-btn').addEventListener('click', function () {
-    const perPlayer = document.getElementById('per-player-cst')
+document.getElementById('total-btn').addEventListener('click', function () {
+    const manager = document.getElementById('manager');
+    const manCost = manager.value;
+    const manCostk = parseFloat(manCost);
+    console.log(manCostk);
+    const coach = document.getElementById('coach');
+    const coaCost = coach.value;
+    const coaCostk = parseFloat(coaCost);
+    console.log(coaCostk);
+    const herw = manCostk + coaCostk;
+    const herwk = parseFloat(herw);
+    console.log(herw);
+    const tot = document.getElementById('expenses');
+    const cost = tot.innerText;
+    const coaCostm = parseFloat(cost);
+    const all = herwk + coaCostm;
+    console.log(all);
 });
+
+
+
