@@ -54,6 +54,10 @@ document.getElementById('total-btn').addEventListener('click', function () {
     const coaCostm = parseFloat(cost);
     const all = herwk + coaCostm;
     console.log(all);
+
+
+    const total = document.getElementById('total-cost');
+    total.innerText = all;
 });
 
 
