@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Team Maker</title>
 </head>
 
 <body>
@@ -40,52 +40,52 @@
         <div class="row">
             <div class=" col-9 d-flix flex-row ">
                 <div class="row">
-                    <div class="card text-bg-dark col-9 m-3" style="width: 18rem;">
+                    <div class="event card text-bg-dark col-9 m-3 " style="width: 18rem;">
                         <img src="image/image (6).png" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
-                            <h3 class="card-title">Lionel Messi</h3>
+                            <h3 class="card-title ">Lionel Messi</h3>
                             <p>333 Goals . 541 Assist</p>
-                            <a href="#" class="btn btn-warning">Go somewhere</a>
+                            <a href="#" class="btn btn-warning btnSelect">Go somewhere</a>
                         </div>
                     </div>
-                    <div class="card text-bg-dark col-9 m-3" style="width: 18rem;">
+                    <div class="event card text-bg-dark col-9 m-3" style="width: 18rem;">
                         <img src="image/image (9).png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h3 class="card-title">Lionel Messi</h3>
+                            <h3 class="card-title">Lionel Messi 1</h3>
                             <p>333 Goals . 541 Assist</p>
-                            <a href="#" class="btn btn-warning">Go somewhere</a>
+                            <a href="#" class="btn btn-warning btnSelect">Go somewhere</a>
                         </div>
                     </div>
-                    <div class="card text-bg-dark col-9 m-3" style="width: 18rem;">
+                    <div class="event card text-bg-dark col-9 m-3" style="width: 18rem;">
                         <img src="image/image (8).png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h3 class="card-title">Lionel Messi</h3>
+                            <h3 class="card-title">Lionel Messi 2</h3>
                             <p>333 Goals . 541 Assist</p>
-                            <a href="#" class="btn btn-warning">Go somewhere</a>
+                            <a href="#" class="btn btn-warning btnSelect">Go somewhere</a>
                         </div>
                     </div>
-                    <div class="card text-bg-dark col-9 m-3" style="width: 18rem;">
+                    <div class="event card text-bg-dark col-9 m-3" style="width: 18rem;">
                         <img src="image/image (4).png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h3 class="card-title">Lionel Messi</h3>
+                            <h3 class="card-title">Lionel Messi 3</h3>
                             <p>333 Goals . 541 Assist</p>
-                            <a href="#" class="btn btn-warning">Go somewhere</a>
+                            <a href="#" class="btn btn-warning btnSelect">Go somewhere</a>
                         </div>
                     </div>
-                    <div class="card text-bg-dark col-9 m-3" style="width: 18rem;">
+                    <div class="event card text-bg-dark col-9 m-3" style="width: 18rem;">
                         <img src="image/image (5).png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h3 class="card-title">Lionel Messi</h3>
+                            <h3 class="card-title">Lionel Messi 4</h3>
                             <p>333 Goals . 541 Assist</p>
-                            <a href="#" class="btn btn-warning">Go somewhere</a>
+                            <a href="#" class="btn btn-warning btnSelect">Go somewhere</a>
                         </div>
                     </div>
-                    <div class="card text-bg-dark col-9 m-3" style="width: 18rem;">
+                    <div class="event card text-bg-dark col-9 m-3" style="width: 18rem;">
                         <img src="image/image (2).png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h3 class="card-title">Lionel Messi</h3>
+                            <h3 class="card-title">Lionel Messi 5</h3>
                             <p>333 Goals . 541 Assist</p>
-                            <a href="#" class="btn btn-warning">Go somewhere</a>
+                            <a href="#" class="btn btn-warning btnSelect">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -95,14 +95,10 @@
                 <div class="row">
                     <div class="card text-bg-dark col-3 m-3" style="width: 18rem;">
                         <h3 class="text-center">Selected-V</h3>
-                        <ol>
-                            <li>Ami</li>
-                            <li>Tumi</li>
-                            <li>say</li>
-                            <li>tara</li>
-                            <li>tui</li>
-                        </ol>
+                        <div id="ol">
+                        </div>
                     </div>
+
                     <div class="card text-bg-dark col-3 m-3" style="width: 18rem;">
                         <div class="m-1">
                             <h3 class="text-center">Budget</h3>
@@ -111,12 +107,13 @@
                                     <p>Per Player :</p>
                                 </div>
                                 <div class="col-7">
-                                    <input class="border border-light w-100 bg-dark m-1 text-light" type="number">
+                                    <input id="per-player-cst" class="border border-light w-100 bg-dark m-1 text-light"
+                                        type="number">
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-warning">Calculate</button>
-                        <p class="my-3">player Expenses : $5000</p>
+                        <button id="per-player-btn" class="btn btn-warning">Calculate</button>
+                        <p class="my-3">player Expenses : <span id="expenses"></span></p>
 
                         <div class="d-flix row">
                             <div class="col-5">
@@ -150,6 +147,7 @@
         </div>
     </footer>
 
+    <script src="teammaker.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
